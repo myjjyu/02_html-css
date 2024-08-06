@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>목록정의요소</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: rgb(97, 4, 102);
+        font: 14px "굴림";
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10px;
+
+        li {
+          border-bottom: 1px solid rebeccapurple;
+
+          &:first-child {
+            border-top: 1px solid rebeccapurple;
+          }
+        }
+
+        a {
+          display: block;
+          padding: 10px 15px;
+          width: auto;
+
+          &:hover {
+            background-color: antiquewhite;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>서비스 목록</h1>
+    <p>사용하실 서비스를 선택하세요</p>
+    <ul>
+      <li><a href="#">메일</a></li>
+      <li><a href="#">블로그</a></li>
+      <li><a href="#">카페</a></li>
+      <li><a href="#">쇼핑</a></li>
+      <li><a href="#">지식인</a></li>
+    </ul>
+    <div>copyright 2024. inpaper.co.kr</div>
+  </body>
+</html>
