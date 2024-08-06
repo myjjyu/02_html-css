@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>박스계층에서의크기(2)</title>
+    <style>
+      body {
+        font-size: 24px;
+        line-height: 150%;
+        font-weight: bold;
+      }
+
+      .parent {
+        background-color: aquamarine;
+        border: 10px dotted rebeccapurple;
+        width: 500px;
+        height: 300px;
+      }
+
+      .child {
+        background-color: rgb(201, 228, 151);
+        width: 100%;
+        height: 100%;
+        padding: 10px 20px;
+        border: 10px dotted rgb(241, 124, 61);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">html &amp; css</div>
+    </div>
+  </body>
+</html>

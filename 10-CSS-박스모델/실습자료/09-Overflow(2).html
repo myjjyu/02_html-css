@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overflow(2)</title>
+    <style>
+      /* <!-- 한태그안에 클래스 아이디 동시에 있으면 
+  클래스 또는 아이디를 &로 표시가넝 --> */
+      body {
+        font-size: 24px;
+        line-height: 150%;
+        font-weight: bold;
+      }
+
+      .parent {
+        background-color: antiquewhite;
+        width: 450px;
+        height: 200px;
+        border: 5px dotted rgb(226, 175, 141);
+
+        .child {
+          background-color: antiquewhite;
+          width: 450px;
+          height: 200px;
+          border: 5px solid rebeccapurple;
+          padding: 30px 30px;
+        }
+        &#box1 {
+          overflow: visible;
+        }
+
+        &#box2 {
+          overflow: scroll;
+        }
+
+        &#box3 {
+          overflow: hidden;
+        }
+
+        &#box4 {
+          overflow: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent" id="box1">
+      <div class="child">visible</div>
+    </div>
+    <br /><br />
+
+    <div class="parent" id="box2">
+      <div class="child">scroll</div>
+    </div>
+    <br /><br />
+
+    <div class="parent" id="box3">
+      <div class="child">hidden</div>
+    </div>
+    <br /><br />
+
+    <div class="parent" id="box4">
+      <div class="child">auto</div>
+    </div>
+    <br /><br />
+  </body>
+</html>

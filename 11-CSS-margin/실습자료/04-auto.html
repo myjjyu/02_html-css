@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>auto</title>
+
+    <style>
+      body {
+        font-size: 24px;
+        line-height: 150%;
+        font-weight: bold;
+      }
+      .parent {
+        background-color: rgb(238, 238, 171);
+        width: 800px;
+        height: 500px;
+        border: 5px solid yellow;
+        margin: 5px auto;
+        .child {
+          background-color: rgb(243, 93, 70);
+          padding: 10px;
+          border: 5px solid rgb(255, 186, 25);
+          width: 500px;
+          margin: 50px auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">박스</div>
+    </div>
+  </body>
+</html>
