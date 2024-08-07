@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>포지션속성(2)</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      div {
+        width: 300px;
+        height: 300px;
+
+        &.box1 {
+          background-color: red;
+          position: absolute;
+          left: 250px;
+          top: 250px;
+          z-index: 100;
+        }
+
+        &.box2 {
+          background-color: blue;
+          position: absolute;
+          left: 150px;
+          top: 150px;
+          z-index: 50;
+        }
+
+        &.box3 {
+          background-color: yellow;
+          position: absolute;
+          left: 200px;
+          top: 200px;
+          z-index: 60;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">박스1</div>
+    <div class="box2">박스2</div>
+    <div class="box3">박스3</div>
+  </body>
+</html>

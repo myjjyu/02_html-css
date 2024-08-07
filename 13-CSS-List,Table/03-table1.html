@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table</title>
+
+    <style>
+      h1 {
+        margin-left: 100px;
+      }
+      .mytable {
+        caption-side: bottom;
+
+        border: 2px solid rgb(132, 22, 192);
+
+        /* 표안의 선을 한줄로 바꿈 (기본이 두줄이기때문에) */
+        border-collapse: collapse;
+
+        /* border-collapse: separate; */
+        /* border-collapse 을 사용해야 적용됨 */
+        /* border-spacing:1px; */
+
+
+        /* 빈칸합칩기능인데 표안의선이 한줄 border-collapse : collapse안먹음
+       <td rowspan="4"> 조절하기
+        */
+        /* empty-cells: hide; */
+
+        /* empty-cells: show; */
+
+        td,
+        th {
+          border: 1px solid rgb(132, 22, 192);
+          padding: 10px;
+          text-align: center;
+          color: rgb(32, 10, 8);
+        }
+      }
+      .caption {
+        margin-top: 15px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>상품 구성</h1>
+    <table class="mytable">
+      <caption class="caption">
+        선물용과 가정용 상품 구성
+      </caption>
+      <thead style="background-color: rgb(230, 131, 232)">
+        <tr>
+          <th>용도</th>
+          <th>중량</th>
+          <th>개수</th>
+          <th>가격</th>
+          <th >비고</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td rowspan="2">선물용</td>
+          <td>3kg</td>
+          <td>11~16과</td>
+          <td>35,000원</td>
+          <td rowspan="4"></td>
+        </tr>
+        <tr>
+          <td>5kg</td>
+          <td>18~26과</td>
+          <td>52,000원</td>
+         
+        </tr>
+
+        <tr>
+          <td rowspan="2">가정용</td>
+          <td>3kg</td>
+          <td>11~16과</td>
+          <td>30,000원</td>
+         
+        </tr>
+        <tr>
+          <td>5kg</td>
+          <td>18~26과</td>
+          <td>47,000원</td>
+          
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

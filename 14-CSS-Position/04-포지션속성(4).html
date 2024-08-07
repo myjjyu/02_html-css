@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>포지션속성(4)</title>
+
+  <style>
+    .parent{
+      width: 500px;
+      height: 300px;
+      margin: auto;
+      background-color: blueviolet;
+      position: relative;
+
+      .child{
+        width: 100px;
+        height: 100px;
+        background-color: violet;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child"></div>
+  </div>
+  <h1>Hello World</h1>
+</body>
+</html>
