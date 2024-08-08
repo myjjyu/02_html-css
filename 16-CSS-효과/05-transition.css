@@ -3,14 +3,12 @@
   margin: auto;
 
   display: flex;
-  flex-flow:row wrap;
+  flex-flow: row wrap;
 
   .imgeItem {
     /* display: inline-block; */
     /* margin: 0 -4px; */
     width: 25%;
-    
-
 
     a {
       display: block;
@@ -54,7 +52,8 @@
           text-overflow: ellipsis;
           display: -webkit-box;
           -webkit-line-clamp: 2;
-          -webkit-box-align: vertical;
+          -webkit-box-orient: vertical;
+
         }
         ul {
           list-style: none;
