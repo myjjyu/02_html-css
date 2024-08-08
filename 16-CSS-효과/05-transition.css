@@ -1,0 +1,78 @@
+.imgeList {
+  width: 1000px;
+  margin: auto;
+
+  display: flex;
+  flex-flow:row wrap;
+
+  .imgeItem {
+    /* display: inline-block; */
+    /* margin: 0 -4px; */
+    width: 25%;
+    
+
+
+    a {
+      display: block;
+      width: auto;
+      border: 1px solid #eee;
+      margin: 10px 15px;
+      color: #000;
+      text-decoration: none;
+      height: 265px;
+
+      .imgArea {
+        width: 100%;
+        height: 150px;
+
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .textArea {
+        padding: 5px 15px 10px 15px;
+
+        h4 {
+          padding: 0;
+          margin: 5px 0;
+          font-size: 14px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        p {
+          padding: 0;
+          margin: 5px 0;
+          font-size: 12px;
+
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-align: vertical;
+        }
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+
+          li {
+            font-size: 11px;
+            margin: 3px 0;
+            padding: 0 0;
+          }
+        }
+      }
+    }
+
+    &:hover img {
+      transform: scale(1.1, 1.1);
+      transition: all 0.5s;
+    }
+  }
+}

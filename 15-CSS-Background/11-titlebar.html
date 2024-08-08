@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>titlebar</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: rgb(232, 235, 237);
+      }
+
+      .titlebar {
+        width: 100%;
+        height: 45px;
+        border-bottom: 1px solid #555;
+        background: linear-gradient(
+          254deg,
+          #7693e1 19%,
+          hsl(282, 48%, 66%) 100%
+        );
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+      }
+
+      .itlebar_text {
+        color: #ffffff;
+        font: 25px/45px "helvetica";
+        /* font: 25px  "helvetica";
+        top: 10px; */
+        text-shadow: 0 1px 10px #1a0334;
+        text-align: center;
+        position: relative;
+      }
+
+      .content {
+        padding-top: 46px;
+      }
+
+      .navi {
+        background: url(./img/list_right.png) repeat-y right top,
+          url(./img/menu.png) no-repeat left top, url(./img/list_bg.png) repeat;
+
+        a {
+          display: block;
+          width: auto;
+          height: 45px;
+          text-indent: -100000px;
+          margin: 1px;
+
+          /*  마우스 올렸을때*/
+          &:hover {
+            background-color: rgb(241, 195, 241);
+            opacity: 0.2;
+          }
+
+          /*  마우스 클릭했을때 */
+          &:active {
+            background-color: rgb(230, 44, 230);
+            opacity: 0.2;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <header class="titlebar">
+        <h1 class="itlebar_text">과목을 선택하세요.</h1>
+      </header>
+      <section class="content">
+        <nav class="navi">
+          <a href="https://www.w3schools.com/" target="_blank"
+            >웹표준 / 웹디자인</a
+          >
+          <a href="https://www.w3schools.com/" target="_blank"
+            >소셜미디어마케팅</a
+          >
+          <a href="https://www.w3schools.com/" target="_blank">IT/모바일</a>
+          <a href="https://www.w3schools.com/" target="_blank">OA</a>
+        </nav>
+      </section>
+    </div>
+  </body>
+</html>

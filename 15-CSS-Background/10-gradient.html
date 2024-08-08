@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient</title>
+
+    <style>
+      .grad1 {
+        width: 150px;
+        height: 150px;
+        background: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(#06f),
+          to(#fff)
+        );
+        /* background: -webkit-linear-gradient(139deg, #FE30B3 4%, #F4F60C 100%) */
+      }
+      .grad2 {
+        width: 150px;
+        height: 150px;
+        background: -webkit-gradient(
+          linear,
+          left bottom,
+          right top, from(rgb(216, 114, 114)),
+          to(#fff)
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <h1>선형 그라데이션</h1>
+    <p>색상만 지정했을때</p>
+    <div class="grad1"></div>
+    <p>방향을 지정했을때</p>
+    <div class="grad2"></div>
+  </body>
+</html>
