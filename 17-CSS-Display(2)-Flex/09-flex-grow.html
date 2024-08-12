@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex-grow</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        border: 2px dotted dodgerblue;
+        padding: 10px;
+        width: 500px;
+
+        display: flex;
+
+        .item {
+          border: 2px solid rgb(13, 55, 97);
+          padding: 10px;
+          margin: 5px;
+
+          &.grow0 {
+            flex-basis: 100px;
+            flex-grow: 0;
+          }
+
+          &.grow1 {
+            flex-basis: 100px;
+            flex-grow: 1;
+          }
+
+          &.item1 {
+            flex-grow: 1;
+          }
+          &.item2 {
+            flex-grow: 3;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>grow0</h1>
+    <div class="container">
+      <div class="item grow0">nomore contents</div>
+      <div class="item grow0">very~~~ very~~~ long contents</div>
+      <div class="item grow0">short</div>
+    </div>
+
+    <h1>grow1</h1>
+    <div class="container">
+      <div class="item grow1">nomore contents</div>
+      <div class="item grow1">very~~~ very~~~ long contents</div>
+      <div class="item grow1">short</div>
+    </div>
+
+    <h1>1 : 3 : 1</h1>
+    <p>각 item 별로 여백의 크기를 1:3:1 로 설정</p>
+    <div class="container">
+      <div class="item item1">A</div>
+      <div class="item item2">B</div>
+      <div class="item item1">C</div>
+    </div>
+  </body>
+</html>

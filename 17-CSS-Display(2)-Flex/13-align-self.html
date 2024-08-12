@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>align-self</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .container {
+        border: 2px dotted darkblue;
+        padding: 10px;
+        margin: 200px;
+
+        display: flex;
+
+        height: 200px;
+
+        /* flex-direction: column; */
+
+
+        .item {
+          border: 2px solid rgb(0, 0, 0);
+          padding: 10px;
+          margin: 5px;
+
+          &:nth-child(1) {
+            align-self: auto;
+          }
+          &:nth-child(2) {
+            align-self: stretch;
+          }
+          &:nth-child(3) {
+            align-self: flex-start;
+          }
+          &:nth-child(4) {
+            align-self: flex-end;
+          }
+          &:nth-child(5) {
+            align-self: center;
+          }
+          &:nth-child(6) {
+            align-self: baseline;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>order</h1>
+    <div class="container">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+    </div>
+  </body>
+</html>

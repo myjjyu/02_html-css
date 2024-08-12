@@ -4,11 +4,17 @@
 
   display: flex;
   flex-flow: row wrap;
+  /* justify-content: space-between;
+  flex-wrap: wrap; */
+  
+  
+
 
   .imgeItem {
     /* display: inline-block; */
     /* margin: 0 -4px; */
     width: 25%;
+
 
     a {
       display: block;
@@ -45,7 +51,7 @@
         }
         p {
           padding: 0;
-          margin: 5px 0;
+          margin: 5px 3;
           font-size: 12px;
 
           overflow: hidden;
@@ -53,12 +59,12 @@
           display: -webkit-box;
           -webkit-line-clamp: 2;
           -webkit-box-orient: vertical;
-
         }
         ul {
           list-style: none;
           padding: 0;
           margin: 0;
+         
 
           li {
             font-size: 11px;

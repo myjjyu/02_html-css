@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex-basis</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        border: 2px dotted dodgerblue;
+        padding: 10px;
+        width: 500px;
+
+        display: flex;
+        flex-wrap: wrap; /* 줄바꿈이 있다면 줄을 바꿔라 */
+
+        .item {
+          border: 2px solid rgb(0, 67, 134);
+          padding: 10px;
+          margin: 5px;
+
+          &.item100px {
+            /* 부모가 플렉스 박스일때 자식의 최소 넓이 지정 */
+            /* 자식이 wihht 를 포함할 경우에는 100px 보다 크면 인정
+          100px 보다 작은 width를 갖는다면 100px 강제로 늘린다 */
+            flex-basis: 100px;
+            /* flex-basis: 200px; */
+            /* flex-basis: 50px; */
+          }
+
+          &.nowrap {
+            white-space: nowrap;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>flex-basis : 100px</h1>
+    <div class="container">
+      <div class="item item100px first">nomore contents</div>
+      <div class="item item100px">very~~~ very~~~ long contents</div>
+      <div class="item item100px">short</div>
+    </div>
+
+    <h1>nowrap</h1>
+    <div class="container">
+      <div class="item item100px nowrap">nomore contents</div>
+      <div class="item item100px nowrap">very~~~ very~~~ long contents</div>
+      <div class="item item100px nowrap">short</div>
+    </div>
+  </body>
+</html>

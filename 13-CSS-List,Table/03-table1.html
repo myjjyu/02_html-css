@@ -15,14 +15,14 @@
         border: 2px solid rgb(132, 22, 192);
 
         /* 표안의 선을 한줄로 바꿈 (기본이 두줄이기때문에) */
-        border-collapse: collapse;
+        /* border-collapse: collapse; */
 
-        /* border-collapse: separate; */
-        /* border-collapse 을 사용해야 적용됨 */
-        /* border-spacing:1px; */
+        border-collapse: separate;
+        /* border-collapse: separate;을 사용해야 적용됨 */
+        border-spacing:1px;
 
 
-        /* 빈칸합칩기능인데 표안의선이 한줄 border-collapse : collapse안먹음
+        /* 빈칸합칩기능인데 표안의선이 한줄 border-collapse : collapse 속성이면 안먹음
        <td rowspan="4"> 조절하기
         */
         /* empty-cells: hide; */

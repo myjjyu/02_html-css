@@ -18,15 +18,12 @@
       .titlebar {
         width: 100%;
         height: 45px;
-        border-bottom: 1px solid #555;
         background: linear-gradient(
           254deg,
           #7693e1 19%,
           hsl(282, 48%, 66%) 100%
         );
         position: fixed;
-        top: 0;
-        left: 0;
         z-index: 1000;
       }
 
@@ -37,7 +34,6 @@
         top: 10px; */
         text-shadow: 0 1px 10px #1a0334;
         text-align: center;
-        position: relative;
       }
 
       .content {
@@ -45,12 +41,15 @@
       }
 
       .navi {
-        background: url(./img/list_right.png) repeat-y right top,
-          url(./img/menu.png) no-repeat left top, url(./img/list_bg.png) repeat;
+        background: url(./img/list_right.png)
+         repeat-y right top,
+          url(./img/menu.png)
+           no-repeat left top, 
+           url(./img/list_bg.png) repeat;
 
         a {
           display: block;
-          width: auto;
+          /* width: auto; */
           height: 45px;
           text-indent: -100000px;
           margin: 1px;

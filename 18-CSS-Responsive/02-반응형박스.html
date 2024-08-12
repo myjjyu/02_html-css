@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>반응형박스</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      h3 {
+        font-size: 20px;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 20px;
+      }
+
+      .chnner_list {
+        /* border: 1px solid rebeccapurple; */
+        width: 800px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+
+        .item {
+          /* border: 1px solid rgb(7, 1, 14); */
+          display: flex; /*thumb 에대한 정렬*/
+          flex-direction: column; /*thumb 에대한 정렬*/
+          flex: none; /* chnner_list 에 설정한 플릭스 영향 안받으려고 넣은것*/
+          flex-basis: 33.33%;
+          margin-top: 20px;
+          padding: 0 5px;
+
+          .thumb {
+            background-colorhttps://file+.vscode-resource.vscode-cdn.net/Users/song-gilju/Desktop/%EC%9B%B93%EC%A0%84%EC%9E%90%EC%A7%80%EA%B0%91/02-HTML%3ACSS/18-CSS-Responsive/%EC%8B%A4%EC%8A%B5%EC%9E%90%EB%A3%8C/03-layout%281%29.html.png?version%3D1723443958526: #dcdcdf;
+
+            .image {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+
+        .title {
+          flex: none; /* item 에 설정한 플릭스 영향 안받으려고 넣은것*/
+          flex-basis: 40px;
+          margin-top: 10px;
+          font-size: 13px;
+          text-align: center;
+        }
+      }
+
+      @media (max-width: 1024px) {
+        .chnner_list {
+          width: 100%;
+
+          .item {
+            flex-basis: 50%;
+          }
+        }
+      }
+
+      @media (max-width: 640px) {
+        .item {
+          min-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ui_box">
+      <h3>가로세로 비율을 유지하는 반응형 박스</h3>
+      <ul class="chnner_list">
+        <li class="item">
+          <div class="thumb">
+            <img src="./img/spring.jpg" class="image" />
+          </div>
+          <strong class="title">가나다라마바사아자차카타파하</strong>
+        </li>
+
+        <li class="item">
+          <div class="thumb">
+            <img src="./img/summer.jpg" class="image" />
+          </div>
+          <strong class="title">가나다라마바사아자차카타파하</strong>
+        </li>
+
+        <li class="item">
+          <div class="thumb">
+            <img src="./img/autumn.jpg" class="image" />
+          </div>
+          <strong class="title">가나다라마바사아자차카타파하</strong>
+        </li>
+
+        <li class="item">
+          <div class="thumb">
+            <img src="./img/winter.jpg" class="image" />
+          </div>
+          <strong class="title">가나다라마바사아자차카타파하</strong>
+        </li>
+
+        <li class="item">
+          <div class="thumb">
+            <img src="./img/ship.jpg" class="image" />
+          </div>
+          <strong class="title">가나다라마바사아자차카타파하</strong>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

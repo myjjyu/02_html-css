@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+
+    <title>정렬이 다른 메뉴</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .tablist {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+
+        .tab {
+          height: 50px;
+          font-weight: bold;
+          padding: 0 15px;
+
+          /* line-height: 50px; */
+          display: flex;
+          align-items: center;
+
+          &.icon {
+            font-size: 22px;
+            padding: 0 25px;
+
+            &:hover {
+              color: rgb(52, 176, 181);
+            }
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <ul class="tablist">
+        <li>
+          <a href="#" class="tab icon"><i class="fa-solid fa-user"></i></a>
+        </li>
+        <li>
+          <a href="#" class="tab">정렬이 다른 메뉴</a>
+        </li>
+        <li>
+          <a href="#" class="tab icon"><i class="fa-solid fa-bars"></i></a>
+        </li>
+      </ul>
+    </header>
+  </body>
+</html>

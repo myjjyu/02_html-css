@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        border: 2px dotted dodgerblue;
+        padding: 10px;
+        width: auto;
+
+        display: flex;
+
+        .item {
+          border: 2px solid rgb(8, 35, 63);
+          padding: 10px;
+          margin: 5px;
+
+          &.flex1 {
+            flex: 1 0 0;
+          }
+          &.flex2 {
+            flex: 2 0 0;
+          }
+          &.flex3 {
+            flex: 1 1 40%;
+          }
+        }
+
+        .container-wrap {
+          flex-wrap: wrap;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>flex 1:2:1</h1>
+    <div class="container">
+      <div class="item flex1">nomore contents</div>
+      <div class="item flex2">very~~~ very~~~ long contents</div>
+      <div class="item flex1">short</div>
+    </div>
+
+    <h1>flex2단</h1>
+    <div class="container container-wrap">
+      <div class="item flex3">nomore contents</div>
+      <div class="item flex3">very~~~ very~~~ long contents</div>
+      <div class="item flex3">short</div>
+      <div class="item flex3">nomore contents</div>
+      <div class="item flex3">very~~~ very~~~ long contents</div>
+      <div class="item flex3">short</div>
+      <div class="item flex3">nomore contents</div>
+      <div class="item flex3">very~~~ very~~~ long contents</div>
+      <div class="item flex3">short</div>
+      <div class="item flex3">nomore contents</div>
+      <div class="item flex3">very~~~ very~~~ long contents</div>
+      <div class="item flex3">short</div>
+    </div>
+  </body>
+</html>
