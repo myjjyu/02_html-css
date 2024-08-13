@@ -25,8 +25,10 @@ body {
 .navbar {
   overflow: hidden;
   background-color: #333;
-  position: sticky;
+  /* sticky 는 부모포지션에 영향을 받을수 있기때문에 단독사용하는게 좋다 */
+  position: sticky; 
   top: 0;
+ 
 
   div {
     /* border: 1px solid red; */
@@ -81,8 +83,9 @@ body {
     /* border: 1px solid red; */
     width: 360px;
 
-    flex: none; /* content에 플렉스를 주었기때문에 자식요소는 부모 크기에 대한 영향을 받음 
+    /* content에 플렉스를 주었기때문에 자식요소는 부모 크기에 대한 영향을 받음 
       자식요소에 논을 넣음으로 부모 크기에 대한 영향을 안받겠다!*/
+    flex: none;
 
     border-left: 1px solid #d5d5d5;
     border-right: 1px solid #d5d5d5;
@@ -121,3 +124,4 @@ body {
   text-align: center;
   padding: 20px;
 }
+

@@ -1,0 +1,398 @@
+.main {
+  /* background-color: #0000ff55; */
+
+  /* padding-top: 100px; */
+
+  .title {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+    .heoll {
+      margin: auto;
+      color: #f1f1f1;
+      text-align: center;
+      text-transform: uppercase; /*대문자로 변경*/
+      padding: 30px 50px;
+
+      @media (max-width: 992px) {
+        padding: 20px 30px;
+      }
+
+      h1 {
+        font-size: 36px;
+        font-weight: 600;
+        white-space: nowrap;
+        margin-bottom: 10px;
+
+        @media (max-width: 992px) {
+          font-size: 26px;
+        }
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: 300;
+
+        @media (max-width: 992px) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .Introdouce {
+    /* background-color: #ff000022;
+    height: 150px; */
+
+    .title {
+      height: 100vh;
+      background-image: url(../img/parallax1.jpg);
+
+      .heoll {
+        background-color: var(--my-color-gray);
+      }
+    }
+
+    .about-me {
+      max-width: 1100px;
+      margin: auto;
+      padding: 65px 40px;
+
+      @media (max-width: 992px) {
+        padding: 45px 20px;
+      }
+
+      h2 {
+        font-size: 42px;
+        color: #444444;
+        margin-top: 40px;
+        text-align: center;
+
+        @media (max-width: 992px) {
+          font-size: 36px;
+          margin-bottom: 20px;
+        }
+      }
+
+      h3 {
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 40px;
+        font-style: italic;
+        color: #444444;
+        text-align: center;
+
+        @media (max-width: 992px) {
+          font-size: 20px;
+          margin-bottom: 30px;
+          font-weight: 300;
+        }
+      }
+
+      p {
+        line-height: 150%;
+        font-size: 18px;
+        margin-bottom: 45px;
+        font-weight: 300;
+
+        @media (max-width: 992px) {
+          line-height: 135%;
+          font-size: 16px;
+          margin-bottom: 25px;
+        }
+      }
+
+      .about-box {
+        display: flex;
+        flex-wrap: wrap; /*미디어 진행시 사용되는 속성*/
+
+        .photo-box {
+          width: 50%;
+          padding: 0 35px;
+
+          @media (max-width: 992px) {
+            width: 100%;
+            padding: 0 20px;
+          }
+
+          h4 {
+            font-size: 22px;
+            color: var(--my-color-gray);
+            margin-bottom: 20px;
+
+            @media (max-width: 992px) {
+              text-align: center;
+            }
+
+            i {
+              margin-right: 10px;
+            }
+          }
+
+          img {
+            width: 100%;
+          }
+        }
+
+        p {
+          width: 50%;
+          padding-top: 40px;
+
+          @media (max-width: 992px) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .skill {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 40px 50px 40px;
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 45px;
+      text-align: center;
+      color: var(--my-color-gray);
+
+      @media (max-width: 992px) {
+        font-size: 28px;
+        margin-bottom: 35px;
+      }
+    }
+
+    .skill-section {
+      h3 {
+        font-size: 22px;
+        margin-bottom: 15px;
+        font-weight: 300;
+        letter-spacing: 8px;
+
+        @media (max-width: 992px) {
+          font-size: 28px;
+          margin-bottom: 35px;
+        }
+      }
+
+      .bar-container {
+        height: 35px;
+        background-color: #eeeeee;
+        margin-bottom: 30px;
+
+        @media (max-width: 992px) {
+          height: 25px;
+          margin-bottom: 20px;
+        }
+
+        .bar {
+          height: 100%;
+          background-color: var(--my-color-gray);
+          text-align: center;
+          color: #f1f1f1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &.w90p {
+            width: 90%;
+          }
+
+          &.w85p {
+            width: 85%;
+          }
+
+          &.w75p {
+            width: 75%;
+          }
+        }
+      }
+    }
+  }
+
+  .point {
+    background-color: var(--my-color-gray);
+
+    .point-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      @media (max-width: 992px) {
+        padding: 20px 10px;
+      }
+
+      .point-item {
+        width: 25%;
+        text-align: center;
+        color: #f1f1f1;
+        margin: 20px auto;
+
+        @media (max-width: 992px) {
+          width: 50%;
+        }
+
+        .point-valeu {
+          font-size: 45px;
+          font-weight: 500;
+          margin-bottom: 25px;
+
+          @media (max-width: 992px) {
+            font-size: 38px;
+            font-weight: 400;
+            margin-bottom: 20px;
+          }
+        }
+
+        .point-text {
+          font-size: 24px;
+          font-weight: 300;
+
+          @media (max-width: 992px) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .PORTFOLIO {
+    /* background-color: #0066ff44;
+    height: 150px; */
+
+    .title {
+      height: 100vh;
+      background-image: url(../img/parallax2.jpg);
+    }
+
+    .content {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 20px;
+
+      @media (max-width: 992px) {
+        padding: 30px 10px;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 32px;
+        color: var(--my-color-dark-gray);
+
+        @media (max-width: 992px) {
+          font-size: 30px;
+          margin-bottom: 24px;
+        }
+      }
+
+      p {
+        text-align: center;
+        margin-bottom: 24px;
+        font-size: 20px;
+        color: var(--my-color-gray);
+        font-weight: 300;
+        font-style: italic;
+
+        @media (max-width: 992px) {
+          font-size: 16px;
+          margin-bottom: 20px;
+        }
+      }
+
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 50px;
+
+        li {
+          width: 25%;
+          padding: 10px;
+
+          @media (max-width: 992px) {
+            width: 50%;
+          }
+
+          a {
+            display: block;
+            overflow: hidden;
+
+            img {
+              width: 100%;
+              transition: all 0.3s ease-in-out;
+
+              &:hover {
+                transform: scale(1.2, 1.2);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .CONTACT {
+    /* background-color: #ff00ff44;
+    height: 150px; */
+
+    .title {
+      height: 100vh;
+      background-image: url(../img/parallax3.jpg);
+    }
+
+    .content {
+      min-width: 1200px;
+      margin: 30px auto;
+      display: flex;
+      flex-wrap: wrap;
+
+      .map {
+        width: 50%;
+        height: 40vh;
+        padding: 20px;
+
+        @media (max-width: 992px) {
+          width: 100%;
+        }
+        img {
+          width: 100%;
+        }
+      }
+
+      .contact-info {
+        width: 50%;
+        padding: 20px;
+
+        @media (max-width: 992px) {
+          width: 100%;
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          height: 100%;
+
+          li {
+            font-size: 26px;
+            color: var(--my-color-gray);
+            padding-left: 35px;
+            line-height: 150%;
+
+            i {
+              margin-right: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
